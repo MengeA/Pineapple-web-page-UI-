@@ -1,0 +1,241 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgba(106, 112, 123, 1);
+	min-height: 100vh;
+	margin: 0;
+	background-image: url(../images/pineapple.png);
+	width: 100%;
+	background-position: bottom;
+}
+
+/* ====== Tipography ======= */
+
+h1{
+	font-size: 1.714rem; /* 24px */
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: rgba(19, 24, 33, 1)	;
+	font-weight: 400;
+}
+a{
+	color:  #131821;
+	text-decoration: underline;
+
+}
+
+ul{
+	display: flex;
+
+}
+
+
+.site-title{
+	color: rgba(19, 24, 33, 1);
+}
+
+/* ======= header ===== */
+
+header{
+	display: flex;
+	background-color: #ffff;
+	justify-content: space-between;
+	min-height: 4.5rem ;
+	align-items: center;
+}
+
+li{
+	list-style: none;
+}
+li a {
+	padding-right: 1.5rem;
+	text-decoration: none;
+	list-style: none;
+	color: rgba(106, 112, 123, 1);
+
+
+}
+
+.logo-site-name{
+	display: flex;
+	align-items: center;
+}
+.site-title{
+	align-self: end;
+	margin: 5px auto;
+	display: none;
+	
+}
+.site-logo{
+	padding-left: 1rem;
+}
+
+
+
+/*=======main ======*/
+
+section{
+
+    background-color: rgba(255, 255, 255, 1);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 15%;
+    margin: auto;
+    width: 350px;
+	padding: 1em;
+}
+.description{
+	line-height: 1.714em;
+}
+
+.agree-on-terms{
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid rgba(227, 227, 228, 1);
+	margin-bottom: 1em;
+	padding-bottom: 2em;
+}
+
+/*======== soacial icons*/
+.icons{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 2em 1em;
+	
+}
+.fa{
+	padding: 10px;
+	border: 2px solid rgba(227, 227, 228, 1)  ;
+	border-radius: 50%;
+	margin-left: 1em;
+
+
+	
+}
+.fa-facebook-f{
+	width: 34px;
+	height: 35x;
+
+}
+.fa-facebook-f:hover{
+	background-color:#4267B2 ;
+	color: white;
+
+}
+.fa-facebook-f:active{
+	background-color:#2F4A80 ;
+	color: white;
+
+}
+.fa-instagram:hover{
+	background-color:#C13584 ;
+	color: white;
+
+}
+.fa-instagram:active{
+	background-color:#8F2762 ;
+	color: white;
+
+}
+.fa-twitter:hover{
+	background-color:#1DA1F2 ;
+	color: white;
+
+}
+.fa-twitter:active{
+	background-color:#177FBF ;
+	color: white;
+
+}
+
+.fa-youtube-play:hover{
+	background-color:#FF0000 ;
+	color: white;
+
+}
+.fa-youtube-play:active{
+	background-color:#CC0000 ;
+	color: white;
+
+}
+
+.get-email{
+
+	height: 60px ;
+	min-width: 100%;
+	border: 0;
+	border: 1px solid rgba(227, 227, 228, 1) ; 
+	border-left: 4px solid rgba(64, 102, 165, 1);
+	margin-bottom: 2em ;
+
+	outline: none;
+}
+
+.get-email:hover{
+	border: 1px solid rgba(64, 102, 165, 1); 
+	border-left: 4px solid rgba(64, 102, 165, 1);
+	
+
+}
+	
+.checkbox {
+		
+	height: 20px;
+	width: 20px;
+		
+}
+
+
+
+@media(min-width:650px){
+	
+	body{
+		display: flex;
+		justify-content: space-between;
+		background-image: none;
+		
+		
+	}
+	header{
+		justify-content: space-between;
+	}
+	section{
+		
+		position: inherit;
+		align-self: center;
+		margin-left: auto;
+		
+	}
+	.container{
+		display: flex;
+		width: 50%;
+		flex-direction: column;
+		margin-right: 2em;
+	
+	
+	}
+	.card-image{
+		
+		background-image: url(../images/pineapple.png);
+		object-fit: cover;
+		width: 80%;
+		background-repeat: no-repeat;
+		background-position: bottom;
+	}
+
+	.site-title{
+		
+		margin: 5px auto;
+		display: block;
+		
+	}
+	.get-email{
+		width: 40vw;
+		position: relative;
+	}
+}
